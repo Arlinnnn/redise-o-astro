@@ -1,0 +1,32 @@
+---
+import SectionProd from "./Section-prod.astro"
+import SobreNTS from "./SobreNTS.astro"
+import Popup from "./Popup.astro"
+import Form from "./Form.astro"
+import Banner from "./Banner.astro"
+import Testimonials from "./Testimonials.astro"
+import Faqs from "./Faqs.astro"
+---
+<main>
+    <Popup/>
+    <section id="home">
+    <h2>Bienvenidos a Nuestra Tienda</h2>
+    <p>Los mejores productos al mejor precio.</p>
+    <Banner/>
+     <SectionProd/>
+    </section>
+     <SobreNTS/>
+     <Testimonials/>
+     <Faqs/>
+     <Form/>
+
+</main>
+<style>
+    main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+</style>

@@ -1,0 +1,68 @@
+<section id="contact">
+    <h2 class="princip">Contacto</h2>
+    <form id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button id="submit" type="submit">Enviar</button>
+    </p>
+    Estamos aquí para ayudarte en cada paso del camino.
+</p>
+    </form>
+</section>
+<script client:load>
+    // Validación y envío del formulario de contacto
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Previene el envío del formulario
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && message) {
+        // Aquí iría el código para enviar el formulario al servidor
+        alert('Formulario enviado con éxito');
+    } else {
+        alert('Por favor, rellene todos los campos');
+    }
+});
+</script>
+<style>
+   .princip{
+    text-align: center;
+   }
+    form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#submit {
+    align-self: center;
+    background: #FFD700 ;
+    color: #1C1C1C;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+#submit:hover {
+    background: #ffd900bb ;
+}
+</style>

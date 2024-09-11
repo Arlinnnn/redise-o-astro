@@ -1,0 +1,93 @@
+/* Media queries para el menú hamburguesa */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Estilos para cuando el menú esté oculto */
+    #navbar ul {
+        display: none; /* Por defecto oculto */
+        flex-direction: column;
+    }
+
+    /* Mostrar menú cuando tenga la clase 'show-menu' */
+    #navbar.show-menu ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .product {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .product img {
+        max-width: 60%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .Description {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .princip {
+        font-size: 18px;
+    }
+
+    .product {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .product img {
+         width: 300px; /* Fija el ancho */
+    height: 200px; /* Fija el alto */
+    object-fit: cover; /* Mantén el aspecto de la imagen */
+        margin-right: 0;
+        margin-bottom: 15px;
+       
+    }
+
+    .Description {
+        width: 100%;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+---
+import Hamburguesa from "./Hamburguesa.astro";
+
+
+---
+
+<header>
+    <h1>Tienda Online</h1>
+
+   <Hamburguesa/>
+</header>
+<style>
+    header {
+    background: #1C1C1C ;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color:#F5F5F5 ;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color:#FFD700;
+}
+</style>

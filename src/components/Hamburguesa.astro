@@ -1,0 +1,76 @@
+<button class="hamburger-menu" id="hamburger-menu" > 
+    &#9776; 
+</button>
+<nav id="navbar">
+    <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
+<script client:load>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navbar = document.getElementById('navbar');
+
+    hamburgerMenu?.addEventListener('click', () => {
+        navbar.classList.toggle('show-menu');
+    });
+</script>
+
+<style>
+.hamburger-menu {
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    display: none; /* Mostrar solo en pantallas pequeñas */
+}
+
+#navbar ul {
+    list-style: 3none;
+    padding: 0;
+margin-top:35px;
+
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 15px;
+
+}
+
+#navbar ul li a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    color:#FFD700;
+}
+
+/* Mostrar el menú en pantallas pequeñas cuando se haga clic */
+.show-menu {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Estilos para cuando el menú esté oculto */
+    #navbar ul {
+        display: none; /* Por defecto oculto */
+        flex-direction: column;
+    }
+
+    /* Mostrar menú cuando tenga la clase 'show-menu' */
+    #navbar.show-menu ul {
+        display: flex;
+    }
+}
+
+</style>
